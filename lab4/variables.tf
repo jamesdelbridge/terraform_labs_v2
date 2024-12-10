@@ -52,9 +52,14 @@ variable "vnet_address_space" {
   type = list
 }
 
-# variable "subnets" {
-#   type = map(any)
-# }
+variable "app_gateway_frontend_port_number" {
+  type = string
+}
+
+
+variable "subnets" {
+  type = map(any)
+}
 
 # variable "vnet_address_space" {
 #   type = list(any)
